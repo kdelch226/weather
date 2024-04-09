@@ -3,18 +3,19 @@
 </form>
 
 <div class="container all-container shadow  rounded-3" *ngIf="todayWeatherData && weatherData">
-  <div class="principal">
+  <div class="principal text-dark">
     <img class="rounded-3" src="../../assets/chaud.png" alt="" srcset="" *ngIf="todayWeatherData.is_day==1">
     <img class="rounded-3" src="../../assets/froid.png" alt="" srcset="" *ngIf="todayWeatherData.is_day==0">
 
     <div class="principal-data text-center">
+      <p>{{daydate}}</p>
       <h3>{{cityTitle}}</h3>
       <h2 class=" fw-bold" style="font-size: 4em;"> {{todayWeatherData.temp_c}} &#176;C</h2>
-      <h4 class="resenti p-1">
+      <h4 class="resenti my-3 p-1">
         ressenti : {{todayWeatherData.feelslike_c}} &#176;C
       </h4>
 
-      <div class="minMax d-flex ">
+      <div class="minMax d-flex justify-content-center mt-5">
         <h4 class="mx-2 fw-bold">min {{weatherData.forecastday[0].day.mintemp_c}} &#176; </h4>
         <h4 class="mx-2 fw-bold">max {{weatherData.forecastday[0].day.maxtemp_c}} &#176; </h4>
       </div>
