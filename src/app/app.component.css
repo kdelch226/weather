@@ -1,0 +1,88 @@
+/* Style de base pour le formulaire de recherche */
+form {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    top: 20%;
+    margin: 1em;
+    z-index: 1;
+}
+
+
+
+.all-container {
+    min-width: 400px;
+    width: 40vw;
+    max-width: 400px;
+    height: 80vh;
+    background-color: rgb(77,77,97);
+    padding-left: 0;
+    padding-right: 0;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.principal {
+    position: relative;
+    height: 50%;
+}
+
+.resenti {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.619);
+    bottom:-40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    white-space: nowrap;
+    color: black;
+}
+
+.principal img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.principal .principal-data {
+    position: relative;
+    z-index: 99;
+    top: 25%;
+}
+
+.minMax {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.619);
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    white-space: nowrap;
+    color: black;
+}
+
+
+.representation{
+    width: 5vw;
+    height: 5vw;
+    max-width: 35px;
+    max-height: 35px;
+}
+
+@media screen and (max-width:450px) {
+    .all-container {
+        width: 95vw;
+        height: 90vh;
+    }
+}

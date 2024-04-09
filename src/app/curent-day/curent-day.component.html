@@ -1,0 +1,9 @@
+<div class="container text-center todayy border" #todayyContainer>
+    <div class="text-center hour p-0 me-3" *ngFor="let item of dayhours;let heur = index ">
+        <div class="hourSpace" *ngIf="heur!=todayhour"><h6>{{heur}} h</h6></div> 
+        <div class="hourSpace" *ngIf="heur==todayhour" #nowElement><h6>maintenant</h6></div> 
+        <img src="../../assets/soleil.png" alt="" srcset="" *ngIf="(item.is_day==1)">
+        <img src="../../assets/lune.png" alt="" srcset="" *ngIf="(item.is_day==0)">
+        <h6>{{item.temp_c}} &#176; </h6>
+    </div>
+</div>

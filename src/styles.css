@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background: linear-gradient(to bottom, rgb(17, 17, 17), rgb(57, 57, 67)); /* Dégradé de noir à gris métallique */
+    background-size: cover; /* Pour couvrir toute la surface */
+    background-repeat: no-repeat; /* Pour éviter la répétition */
+    background-attachment: fixed; /* Pour fixer l'arrière-plan */
+}
+
